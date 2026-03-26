@@ -38,3 +38,6 @@ Thumbs.db
 *.swp
 
 /venv
+
+my-app/node_modules
+my-app/build
