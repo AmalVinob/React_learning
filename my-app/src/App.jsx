@@ -46,6 +46,8 @@ import { Welcome } from "./Welcome";
 import Button from "./button";
 import { Product } from "./Product";
 import { Greeting } from "./Greeting";
+import { UserDetails } from "./UserDetails";
+
 
 
 // Main component
@@ -53,11 +55,14 @@ function App() {
 
   return (
     <div>
+      <UserDetails name="Charlie" isOnline={true} isPremium={true} isNewUser={true} />
+      <UserDetails name="Dave" isOnline={false} hideOffline={true} />
       <Product title="Laptop" price={999.99} instock={true} category={["Electronics", "Computers"]} />
       <h1>My First React App</h1>
       <Welcome name="Alice" />
       <Button />
       <Greeting name="Bob" message="Nice to meet you!" />
+
     </div>
   );
 }
