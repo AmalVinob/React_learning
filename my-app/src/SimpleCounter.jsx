@@ -1,0 +1,17 @@
+import { useState } from "react";
+
+export const SimpleCounter = () => {
+    console.log("SimpleCounter Rendered");
+    const[count, setCount] = useState(0);
+
+    const handleClick = () => {
+        setCount(count + 1);
+    }
+
+    return(
+        <div>
+            <h2>Count: {count}</h2>
+            <button onClick={handleClick}>Increment</button>
+        </div>
+    )
+};
